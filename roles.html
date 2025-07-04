@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Community - Roles</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Server Logo">
+                Update Community
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rules.html">Rules</a>
+                <a href="features.html">Features</a>
+                <a href="team.html">Team</a>
+                <a href="roles.html" class="active">Roles</a>
+                <a href="special.html">Special</a>
+            </nav>
+            <div class="actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content for the Roles Page -->
+    <main class="main-content">
+        <div class="container" data-aos="fade-up">
+
+            <!-- ======================= MOVED NOTE SECTION ======================= -->
+            <p class="page-note" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-circle-info"></i>
+                <strong>Note:</strong> Custom roles purchased by members are generally not listed here unless awarded via special events.
+            </p>
+            <!-- ======================================================================== -->
+
+            <!-- Tab Navigation -->
+            <div class="roles-nav-tabs">
+                <button class="tab-btn active" data-target="staff-hierarchy">Staff Hierarchy</button>
+                <button class="tab-btn" data-target="member-ranks">Community Ranks</button>
+                <button class="tab-btn" data-target="self-assignable">Self-Assignable Roles</button>
+                <button class="tab-btn" data-target="special-utility">Special & Utility</button>
+                <button class="tab-btn" data-target="system-roles">System Roles</button>
+            </div>
+
+            <!-- Tab Content Panels -->
+
+            <!-- ======================= Staff Hierarchy Tab ======================= -->
+            <div id="staff-hierarchy" class="role-tab-content active">
+                <div class="roles-content-card">
+                    <div class="roles-header"><i class="fa-solid fa-shield-halved"></i><h1>Staff Hierarchy</h1></div>
+                    <p class="roles-description">Our dedicated team ensures our community is a fun, safe, and well-managed space. Staff members are chosen for their dedication, activity, and ability to help others.</p>
+                    
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-crown"></i> High Roles</h3>
+                        <p>The leadership team responsible for overall server strategy, management, and final decisions.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-red"><i class="fa-solid fa-skull-crossbones"></i><span class="role-dot"></span>Full Power</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-crown"></i><span class="role-dot"></span>Update God's</div>
+                            <div class="role-tag role-blue"><i class="fa-solid fa-user-shield"></i><span class="role-dot"></span>Community Controller</div>
+                            <div class="role-tag role-green"><i class="fa-solid fa-chess-king"></i><span class="role-dot"></span>Community Manager</div>
+                        </div>
+                    </div>
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-gavel"></i> Moderators & Support</h3>
+                        <p>The frontline team for moderation, member support, and ensuring the smooth day-to-day running of the server.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-orange"><i class="fa-solid fa-gavel"></i><span class="role-dot"></span>SuperVisor</div>
+                            <div class="role-tag role-purple"><i class="fa-solid fa-user-gear"></i><span class="role-dot"></span>Jailer Staff</div>
+                            <div class="role-tag role-cyan"><i class="fa-solid fa-user-check"></i><span class="role-dot"></span>Verification Staff</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-hands-helping"></i><span class="role-dot"></span>Need Help Staff</div>
+                            <div class="role-tag role-pink"><i class="fa-solid fa-calendar-star"></i><span class="role-dot"></span>Event Manager</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-user-tag"></i><span class="role-dot"></span>Staff</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= Community Ranks Tab ======================= -->
+            <div id="member-ranks" class="role-tab-content">
+                <div class="roles-content-card">
+                    <div class="roles-header"><i class="fa-solid fa-ranking-star"></i><h1>Member Status & Ranks</h1></div>
+                    <p class="roles-description">Roles that show your status in the community, earned through activity, support, and engagement.</p>
+                    
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-keyboard"></i> Text Progression Ranks</h3>
+                        <p>Automatically assigned as you chat in the server, unlocking new perks.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-grey"><i class="fa-solid fa-feather"></i><span class="role-dot"></span>Faded Script</div>
+                            <div class="role-tag role-pink"><i class="fa-solid fa-pen-fancy"></i><span class="role-dot"></span>Red Scribbler</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-book-open"></i><span class="role-dot"></span>The Room's Pen</div>
+                            <div class="role-tag role-green"><i class="fa-solid fa-comments"></i><span class="role-dot"></span>Red Prophet</div>
+                        </div>
+                    </div>
+                     <div class="role-category">
+                        <h3><i class="fa-solid fa-microphone-lines"></i> Voice Progression Ranks</h3>
+                        <p>Automatically assigned as you participate in voice channels.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-grey"><i class="fa-solid fa-volume-off"></i><span class="role-dot"></span>Mouth Of Silece</div>
+                            <div class="role-tag role-cyan"><i class="fa-solid fa-wave-square"></i><span class="role-dot"></span>Red Echo</div>
+                            <div class="role-tag role-purple"><i class="fa-solid fa-fire"></i><span class="role-dot"></span>Red Warden</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-star"></i><span class="role-dot"></span>The Room's Voice</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-ear-listen"></i><span class="role-dot"></span>The Listener</div>
+                        </div>
+                    </div>
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-gem"></i> Supporter Roles</h3>
+                        <p>Special roles for those who go the extra mile to support our community's growth and success.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-pink"><i class="fa-solid fa-heart"></i><span class="role-dot"></span>Server Booster</div>
+                            <div class="role-tag role-gold"><i class="fa-solid fa-gem"></i><span class="role-dot"></span>Starter Donator</div>
+                            <div class="role-tag role-cyan"><i class="fa-solid fa-gem"></i><span class="role-dot"></span>Premium Donator</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-gem"></i><span class="role-dot"></span>Legend Donator</div>
+                        </div>
+                    </div>
+                     <div class="role-category">
+                        <h3><i class="fa-solid fa-users-viewfinder"></i> Clan System</h3>
+                        <p>Roles related to the community clan system.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-purple"><i class="fa-solid fa-landmark"></i><span class="role-dot"></span>Clan Manager</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-crown"></i><span class="role-dot"></span>Clan Leader</div>
+                            <div class="role-tag role-orange"><i class="fa-solid fa-user-plus"></i><span class="role-dot"></span>Clan Co Leader</div>
+                            <div class="role-tag role-gold"><i class="fa-solid fa-trophy"></i><span class="role-dot"></span>Clan Of The Week</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= Self-Assignable Roles Tab ======================= -->
+            <div id="self-assignable" class="role-tab-content">
+                <div class="roles-content-card">
+                    <div class="roles-header"><i class="fa-solid fa-pen-to-square"></i><h1>Self-Assignable Roles</h1></div>
+                    <p class="roles-description">Customize your server experience by picking roles from our bots in the `SELF ROLES` channel.</p>
+                    
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-palette"></i> Color Roles</h3>
+                        <p>Personalize your name with a splash of color.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-red"><span class="role-dot"></span>Red</div>
+                            <div class="role-tag role-blue"><span class="role-dot"></span>Blue</div>
+                            <div class="role-tag role-green"><span class="role-dot"></span>Green</div>
+                            <div class="role-tag role-orange"><span class="role-dot"></span>Orange</div>
+                            <div class="role-tag role-purple"><span class="role-dot"></span>Purple</div>
+                            <div class="role-tag role-pink"><span class="role-dot"></span>Pink</div>
+                            <div class="role-tag role-cyan"><span class="role-dot"></span>Yellow</div>
+                            <div class="role-tag role-grey"><span class="role-dot"></span>Grey</div>
+                        </div>
+                    </div>
+
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-gamepad"></i> Game Roles</h3>
+                        <p>Get pings for game nights and find teammates for your favorite games.</p>
+                        <div class="role-tags-container">
+                             <div class="role-tag role-grey"><i class="fa-solid fa-car"></i><span class="role-dot"></span>GTA 5</div>
+                             <div class="role-tag role-red"><i class="fa-solid fa-crosshairs"></i><span class="role-dot"></span>Valorant</div>
+                             <div class="role-tag role-cyan"><i class="fa-solid fa-person-rifle"></i><span class="role-dot"></span>Fortnite</div>
+                             <div class="role-tag role-orange"><i class="fa-solid fa-gun"></i><span class="role-dot"></span>Call Of Duty</div>
+                             <div class="role-tag role-blue"><i class="fa-solid fa-hand-fist"></i><span class="role-dot"></span>Brawlhalla</div>
+                             <div class="role-tag role-green"><i class="fa-solid fa-mobile-screen"></i><span class="role-dot"></span>Pubg Mobile</div>
+                             <div class="role-tag role-red"><i class="fa-solid fa-fire"></i><span class="role-dot"></span>Free Fire</div>
+                             <div class="role-tag role-cyan"><i class="fa-solid fa-dragon"></i><span class="role-dot"></span>League Of Legends</div>
+                             <div class="role-tag role-purple"><i class="fa-solid fa-bolt"></i><span class="role-dot"></span>Blood Strike</div>
+                             <div class="role-tag role-green"><i class="fa-solid fa-cube"></i><span class="role-dot"></span>Minecraft</div>
+                        </div>
+                    </div>
+
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-id-card"></i> Profile Roles</h3>
+                        <p>Let others know a bit more about you.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-blue"><i class="fa-solid fa-mars"></i><span class="role-dot"></span>Male</div>
+                            <div class="role-tag role-pink"><i class="fa-solid fa-venus"></i><span class="role-dot"></span>Female</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-user-plus"></i><span class="role-dot"></span>+18</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-user-minus"></i><span class="role-dot"></span>-18</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-heart"></i><span class="role-dot"></span>Taken</div>
+                            <div class="role-tag role-green"><i class="fa-solid fa-leaf"></i><span class="role-dot"></span>Single</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-arrow-down-1-9"></i><span class="role-dot"></span>No XP</div>
+                        </div>
+                    </div>
+                     <div class="role-category">
+                        <h3><i class="fa-solid fa-comment-dots"></i> Hobby Roles</h3>
+                        <p>Get pings for topics you care about, or show off your interests.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-purple"><i class="fa-solid fa-palette"></i><span class="role-dot"></span>Designer</div>
+                            <div class="role-tag role-cyan"><i class="fa-solid fa-code"></i><span class="role-dot"></span>Developer</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-video"></i><span class="role-dot"></span>Content Creator</div>
+                            <div class="role-tag role-pink"><i class="fa-solid fa-cat"></i><span class="role-dot"></span>Otaku</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= Special & Utility Tab ======================= -->
+            <div id="special-utility" class="role-tab-content">
+                <div class="roles-content-card">
+                    <div class="roles-header"><i class="fa-solid fa-wand-magic-sparkles"></i><h1>Special & Utility</h1></div>
+                    <p class="roles-description">Unique roles for bots, special events, or specific server permissions.</p>
+
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-robot"></i> Bot Roles</h3>
+                        <p>Roles assigned to our automated helpers.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-blue"><i class="fa-solid fa-robot"></i><span class="role-dot"></span>Community Bot's</div>
+                            <div class="role-tag role-green"><i class="fa-solid fa-music"></i><span class="role-dot"></span>Music Bot's</div>
+                        </div>
+                    </div>
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-star"></i> Vanity & Event Roles</h3>
+                        <p>Rare and special roles that make you stand out.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-pink"><i class="fa-solid fa-cake-candles"></i><span class="role-dot"></span>Happy Birthday</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-gem"></i><span class="role-dot"></span>Obsidian Warden</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-mask"></i><span class="role-dot"></span>Scarlet Enigma</div>
+                            <div class="role-tag role-gold"><i class="fa-solid fa-wand-sparkles"></i><span class="role-dot"></span>Skin Changer</div>
+                        </div>
+                    </div>
+                     <div class="role-category">
+                        <h3><i class="fa-solid fa-sliders"></i> Permission Roles</h3>
+                        <p>Roles that grant specific abilities within the server.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-cyan"><i class="fa-solid fa-arrows-up-down-left-right"></i><span class="role-dot"></span>Move Power</div>
+                            <div class="role-tag role-orange"><i class="fa-solid fa-microphone-slash"></i><span class="role-dot"></span>Mute Power</div>
+                            <div class="role-tag role-green"><i class="fa-solid fa-image"></i><span class="role-dot"></span>Pic Power</div>
+                            <div class="role-tag role-purple"><i class="fa-solid fa-signature"></i><span class="role-dot"></span>Nickname Power</div>
+                            <div class="role-tag role-blue"><i class="fa-solid fa-link"></i><span class="role-dot"></span>Link Power</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ======================= System Roles Tab ======================= -->
+            <div id="system-roles" class="role-tab-content">
+                <div class="roles-content-card">
+                    <div class="roles-header"><i class="fa-solid fa-circle-exclamation"></i><h1>System & Status Roles</h1></div>
+                    <p class="roles-description">These roles are typically managed by staff and bots to indicate a member's current status or restrictions.</p>
+
+                    <div class="role-category">
+                        <h3><i class="fa-solid fa-user-check"></i> Verification Status</h3>
+                        <p>Indicates a member's verification level.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-green"><i class="fa-solid fa-check-double"></i><span class="role-dot"></span>Verified</div>
+                            <div class="role-tag role-pink"><i class="fa-solid fa-venus"></i><span class="role-dot"></span>Verified Female</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-question-circle"></i><span class="role-dot"></span>Unverified</div>
+                        </div>
+                    </div>
+                     <div class="role-category">
+                        <h3><i class="fa-solid fa-triangle-exclamation"></i> Restrictive Roles</h3>
+                        <p>Roles that limit a member's permissions, assigned by staff.</p>
+                        <div class="role-tags-container">
+                            <div class="role-tag role-orange"><i class="fa-solid fa-volume-xmark"></i><span class="role-dot"></span>Muted</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-ban"></i><span class="role-dot"></span>Jailed</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-ban"></i><span class="role-dot"></span>Need Help Blacklisted</div>
+                            <div class="role-tag role-grey"><i class="fa-solid fa-arrow-down-1-9"></i><span class="role-dot"></span>No XP</div>
+                            <div class="role-tag role-gold"><i class="fa-solid fa-exclamation"></i><span class="role-dot"></span>Warn 1</div>
+                            <div class="role-tag role-orange"><i class="fa-solid fa-exclamation"></i><span class="role-dot"></span>Warn 2</div>
+                            <div class="role-tag role-red"><i class="fa-solid fa-exclamation"></i><span class="role-dot"></span>Warn 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of the main container -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Update Community. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
