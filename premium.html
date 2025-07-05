@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Community - Premium</title>
+    <!-- Correct paths for your original project structure -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Server Logo">
+                Update Community
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="rules.html">Rules</a>
+                <a href="features.html">Features</a>
+                <a href="team.html">Team</a>
+                <a href="roles.html">Roles</a>
+                <a href="special.html">Special</a>
+                <a href="premium.html" class="active">Premium</a> <!-- JS will handle the "active" class -->
+            </nav>
+            <div class="actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container" data-aos="fade-up">
+            <h1 class="hero-title">Unlock the <span class="highlight">Ultimate</span> Experience</h1>
+            <p class="hero-subtitle">Access exclusive roles, private channels, and unique perks by upgrading to our Premium Pack today.</p>
+            <!-- This button will now smoothly scroll down to the form -->
+            <a href="#request-form" class="btn btn-primary btn-lg">Request Your Pack Now <i class="fa-solid fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Premium Perks Section -->
+    <section class="section" id="premium-perks">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What's Inside the Premium Pack?</h2>
+            <div class="grid-3">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-gem card-icon"></i>
+                    <h3>Exclusive Role & Badge</h3>
+                    <p>Stand out from the crowd with a unique, colored role and a shiny badge next to your name in the server.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-lock card-icon"></i>
+                    <h3>VIP Lounge Access</h3>
+                    <p>Gain entry to our private, premium-only channels for exclusive discussions, sneak peeks, and direct contact with staff.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-wand-magic-sparkles card-icon"></i>
+                    <h3>Enhanced Permissions</h3>
+                    <p>Unlock special abilities like sharing images in more channels, a higher chat XP rate, and access to unique bot commands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content for Premium Request Form (on the same page) -->
+    <main class="main-content" id="request-form">
+        <section class="section" style="padding-top: 0;"> <!-- Remove top padding to flow nicely -->
+            <div class="container">
+                <h1 class="section-title" data-aos="fade-up">Premium Pack Request</h1>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+                    Fill out the form below to request your pack. Please ensure all information is accurate.
+                </p>
+
+                <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+                    <form id="premium-request-form">
+                        <!-- Question 1: Discord ID -->
+                        <div class="form-group">
+                            <label for="discord-id">Your Discord Account ID</label>
+                            <input type="text" id="discord-id" name="discordId" placeholder="e.g., 123456789012345678" required pattern="\d{17,19}">
+                            <small>Right-click your profile in Discord and click "Copy User ID". You may need to enable Developer Mode in your settings first.</small>
+                        </div>
+
+                        <!-- Question 2: 2FA Enabled -->
+                        <div class="form-group">
+                            <label>Is 2FA (Two-Factor Authentication) enabled on your account?</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="2fa" value="Yes" required>
+                                    <span class="radio-custom"></span> Yes
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="2fa" value="No">
+                                    <span class="radio-custom"></span> No
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Question 3: Accept Rules -->
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="accept-rules" name="acceptRules" required>
+                                <span class="checkbox-custom"></span>
+                                I have read and agree to the Server <a href="rules.html" target="_blank">Rules</a> and Discord's <a href="https://discord.com/terms" target="_blank">Terms of Service</a>.
+                            </label>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="submit-btn">
+                                <i class="fa-solid fa-paper-plane"></i> Submit Request
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Status Message Area -->
+                    <div id="form-status" class="form-status"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Update Community. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://discord.gg/RNVppZ5fGb" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/upddaaaaatee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
